@@ -1,0 +1,144 @@
+<html>
+	<head>
+		<title>Life Hacks Index</title>
+		<script>
+			function resetFunction() {
+				console.log("Form reset");
+			}
+
+			function detectInput() {
+				console.log("Input Detected");
+			}
+
+			//Same as Input but detects after the element loses focus
+			function detectChange() {
+				console.log("Change detected");
+			}
+
+			function invalidFunction() {
+				alert("Must be more than 6 figures");
+			}
+
+
+		</script>
+	</head>
+	
+	<body>
+		<table>		
+	 	<th><td width="70"></td>
+	        <td width="800"><img src="logo_gold.png" alt="logo" width="50"></td>
+	        <td  allign="left"><a href="podcast">Podcasts |</a>
+			<a href="?">Articles |</a>
+			<a href="?">Ideas |</a>
+			<a href="?">About us |</a>
+			<a href= "registration.html" > Log in | </a>
+			<a href="?">Contact us</a></td>
+		<td width="70"></td>
+	   </th> 
+	</table>
+	<hr/>
+
+		<table>
+		<tr><td width="70"></td>
+	        <td width="800"></td>
+	        <td  allign="left"><a href="0">Go to bottom</a></td>
+		<td width="70"></td>
+          	</tr>
+		
+		<tr> <td width="70"></td>
+		<td>
+			<h2> Sign up </h2>
+			<form action= "index.html" >
+
+<div>
+		       User-Name <br>
+
+			<input type = "text" required placeholder =  "firstname"> <br>
+          
+           		Phone <br>
+				<input type = "number" required onchange="detectChange"> <br>
+			Age<br>
+				<input type = "number" required > <br>
+			Your favorite color <br>
+				<input type ="color">
+
+ 		        Birth date <br> <input type = date placeholder= "dd/mm/yyyy" > <br>
+         Gender: <br>
+        MALE <input type = "radio" name ="Gender" value= "male"> 
+        FEMALE  <input type = "radio" name ="Gender" value= "female"> <br><br>
+	 Password<br> <input type= Password required placeholder= "more than 6 figures" minlength= "6"  oninvalid="invalidFunction()"> <br>
+	Confirm password <br> <input type= Password required placeholder= "more than 6 figures" minlength= "6"> <br> <br>
+</div>
+<div>	
+skills <br>
+
+<ul>
+	<li> <input type= "checkbox" > HTML </li>
+	<li> <input type= "checkbox" > CSS </li>
+	<li> <input type= "checkbox" > JS </li>
+	<li> <input type= "checkbox" > PHP </li>
+</ul>
+
+ country <br>
+	 <select name="countries">
+    <option value="Ethiopia">Ethiopia</option>
+    <option value="Kenya">Kenya</option>
+    <option value="Uganda">Uganda</option>
+    <option value="somali">Somali</option>
+  </select>
+
+Photo <br> <input type="file" name="Choose File" multiple> 
+Describe Yourself <br> <textarea rows="5" cols="50" oninput="detectInput()" onchange="detectChange()"> </textarea>
+<br> <input type ="reset" value = "Reset" onreset="resetFunction()">
+<input type = "submit" value = "Sign up">
+  
+</form>
+			
+		</td>
+
+		<td><h2>Recent posts</h2>
+			<ul><li>Articles
+				<ul><li>The Importance of Goals, Especially During Difficult Times
+				    <li> 5 Steps to Discovering Your Life Purpose In 2022!</ul>
+				<li>Ideas
+				<ul><li>10 Books to Read in The Fall 
+				    <li>Top Web Development Projects Ideas </ul>
+			</ul>
+		<h2>Most Viewed Article</h2>
+			<ol type=I><li>Instant Gratification Is Stopping You From Reaching Your Goals! 
+				    <li>Stop Juggling Between Work And Life
+			</ol>
+		<h1> IP Project Winners </h1>
+		<pre>	
+	------------------------------------
+	 Rank	Award
+	------------------------------------
+	First	Free Hosting and Support
+	Second 5GB Mobile Data
+	Third	1GB Mobile Data
+	------------------------------------
+		</pre>
+		</tr>
+	
+		<tr> 
+		     <td width="70"></td>
+		     <td>
+			</td>
+
+
+		     <td></td>
+		     <td width="70"></td>
+		<tr><td width="70"></td>
+		    <td colspan="2"><hr noshade/></td>
+		     <td></td>
+		<td width="70"></td>	
+		<tr><td width="70"></td>
+		    <td >Follow Us On: <a href="podcast">Facebook |</a><a href="podcast"> Twitter</a></td>
+		     <td align="right"><a href="podcast"> Privacy | </a><a href="podcast">Terms of Use</a></td>
+		<td width="70"></td>
+		<tr><td width="70"></td>
+		    <td colspan="2" align ="center">Copyright &copy; AASTU SEng 2021, All Rights Reserved</td>
+		     <td></td>
+		<td width="30"></td>
+	</body>
+</html>

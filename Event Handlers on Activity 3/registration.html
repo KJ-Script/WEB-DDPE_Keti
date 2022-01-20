@@ -1,0 +1,120 @@
+<html>
+	<head>
+		<title>Life Hacks Index</title>
+	</head>
+	
+	<body>
+		<table>		
+	 	<th><td width="70"></td>
+	        <td width="800"><img src="logo_gold.png" alt="logo" width="50"></td>
+	        <td  align="left"><a href="podcast">Podcasts |</a>
+			<a href="?">Articles |</a>
+			<a href="?">Ideas |</a>
+			<a href="?">About us |</a>
+			<a href= "sign.html" > Sign up  | </a>
+			<a href="?">Contact us</a></td>
+		<td width="70"></td>
+	   </th> 
+	</table>
+	<hr/>
+
+		<table>
+		<tr><td width="70"></td>
+	        <td width="800"></td>
+	        <td  allign="left"><a href="0">Go to bottom</a></td>
+		<td width="70"></td>
+          	</tr>
+		
+		<tr> <td width="70"></td>
+		<td>
+			<h2> Sign in</h2>
+				<p> Signing in and get full resources</p>
+				<form action="index.html" onsubmit="validateForm()">
+					Username <input  type = "text" placeholder= "Email"  id="name" onfocus="highlightBox()" onselect="selectFunction()"> <br><br>
+					Password <input type = "password" placeholder= "password" id="pass" onblur="highlightNothing()"> <br>
+					<br> <button type="submit">sign in</button> 
+					</form>
+		</td>
+
+		<td><h2>Recent posts</h2>
+			<ul><li>Articles
+				<ul><li>The Importance of Goals, Especially During Difficult Times
+				    <li> 5 Steps to Discovering Your Life Purpose In 2022!</ul>
+				<li>Ideas
+				<ul><li>10 Books to Read in The Fall 
+				    <li>Top Web Development Projects Ideas </ul>
+			</ul>
+		<h2>Most Viewed Article</h2>
+			<ol type=I><li>Instant Gratification Is Stopping You From Reaching Your Goals! 
+				    <li>Stop Juggling Between Work And Life
+			</ol>
+		<h1> IP Project Winners </h1>
+		<pre>	
+	------------------------------------
+	 Rank	Award
+	------------------------------------
+	First	Free Hosting and Support
+	Second 5GB Mobile Data
+	Third	1GB Mobile Data
+	------------------------------------
+		</pre>
+		</tr>
+	
+		<tr> 
+		     <td width="70"></td>
+		     <td>
+			</td>
+
+
+		     <td></td>
+		     <td width="70"></td>
+		<tr><td width="70"></td>
+		    <td colspan="2"><hr noshade/></td>
+		     <td></td>
+		<td width="70"></td>	
+		<tr><td width="70"></td>
+		    <td >Follow Us On: <a href="podcast">Facebook |</a><a href="podcast"> Twitter</a></td>
+		     <td allign="right"><a href="podcast"> Privacy | </a><a href="podcast">Terms of Use</a></td>
+		<td width="70"></td>
+		<tr><td width="70"></td>
+		    <td colspan="2" allign ="center">Copyright &copy; AASTU SEng 2021, All Rights Reserved</td>
+		     <td></td>
+		<td width="30"></td>
+
+		<script>
+			//OnFocus
+			function highlightBox() {
+				console.log("focus on username")
+
+			}
+
+			//onblur
+			function highlightNothing() {
+				console.log("Blur on password")
+			}
+
+			//On Submit
+			function validateForm() {
+				if(document.getElementById("name").value.trim() == ""){
+					alert("Enter Username");
+					console.log("Username is Empty");
+					return false;
+				}
+				else if(document.getElementById("pass").value.trim() == ""){
+					alert("Enter password");
+					console.log("Password Empty");
+					return false;
+				}
+				else {
+					alert("Logged in");
+				}
+			}
+
+			//onSelect
+			function selectFunction() {
+				alert("Username selected");
+				console.log("Selected Username");
+			}
+		</script> 
+	</body>
+</html>
